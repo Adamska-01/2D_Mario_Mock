@@ -3,6 +3,7 @@ SuperMario-like game created with 'SDL'.
  <p align="center"> 
  <img src="Screenshot.png" alt="Screen" width="500"/>
  </p>
+ 
 # Table of contents
 * [Download & Setup](#download-&-setup)
 * [General info](#general-info)
