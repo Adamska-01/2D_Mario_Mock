@@ -1,7 +1,8 @@
 # 2D_Mario_Mock 
-SuperMario-like game created with 'SDL'.
- <img src="Screenshot.png" alt="Screen" width="200"/>
- 
+SuperMario-like game created with 'SDL'. 
+ <p align="center"> 
+ <img src="Screenshot.png" alt="Screen" width="500"/>
+ </p>
 # Table of contents
 * [Download & Setup](#download-&-setup)
 * [General info](#general-info)
@@ -25,9 +26,10 @@ The only instance present in the main is the Application. The whole game logic g
 All the objects present in the implementation have an Update and a draw function, that gets called in the Game class.  
 The Game’s Update keeps looping all the components’ updates and then proceeds to render the objects. The map (.txt) takes care of the spawn point,and provides a grid to handle the collisions with the entities. The Player handles the Bobble’s vector direction (and its normalization), as well as its destruction and respawn.   
 The Win/Lose condition is given by the number of lives that the player and the key pick up. If that number reaches 0, the game is considered over and exits the loop freeing the allocated memory, or if the key at the end of the map is picked up the player wins. 
-
-<img src="FinalUML.png" alt="UML" width="200"/>
-
+<p align="center"> 
+<img src="FinalUML.png" alt="Screen" alt="UML" width="1200"/>
+</p>
+ 
 ## Technologies:
 - C/C++
 - SDL2
