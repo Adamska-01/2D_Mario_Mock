@@ -19,8 +19,9 @@ Simple and short 2D Platform game.
 
 #### How to play
 **`THIS DEMO IS ONLY PLAYABLE THROUGH KEYBOARD `**  
-MOVEMENT --> A & D
-JUMP --> SPACEBAR
+
+MOVEMENT --> A & D\
+JUMP --> SPACEBAR\
 EXIT ---> ESC
 
 #### Game architecture
