@@ -1,5 +1,6 @@
-# Bobble-Blast
+# 2D_Mario_Mock 
 SuperMario-like game created with 'SDL'.
+ <img src="Screenshot.png" alt="Screen" width="200"/>
  
 # Table of contents
 * [Download & Setup](#download-&-setup)
@@ -11,22 +12,24 @@ SuperMario-like game created with 'SDL'.
 **`DOWNLOAD THE PROJECT AND START THE SOLUTION ON x64 PLATFORM. IT WON'T RUN ON x32 UNLESS YOU SWAP THE DLLs IN THE PROJECT FOLDER`**
 
 ## General info
-This project is a simple game where the player has to shoot falling bobbles matching the colour.   
-**`Multiplayer support added`**.
+Simple and short 2D Platform game.  
+
 #### How to play
-**`THIS IS A DEMO MADE TO TEST THE CONTROLLER FUNCTIONALITIES WITH SDL, KEYBOARD WON'T WORK`**  
-The player can rotate the cannon loaded with the Booble using the directional buttons, and change its colour using RB and LB. After directing the cannon towards the target, the player can select the colour of the Bobble and shoot the targets using the A button. If the colour matches, the player scores points, whereas if it doesn’t, he loses points. 
-The number of lives per game is 3. The lives can be lost by letting the spawned Bobbles fall to the ground.
+**`THIS DEMO IS ONLY PLAYABLE THROUGH KEYBOARD `**  
+MOVEMENT --> A & D
+JUMP --> SPACEBAR
+EXIT ---> ESC
+
 #### Game architecture
-The only instance present in the main is the Application. The whole game logic gets handled internally.    
-The player can choose in runtime whether to play in single-player or multiplayer from the main menu. Based on the selection, the game initializes the correct map and everything that depends on it, and of course the right number of players.  
-All the objects present in the implementation have an Update and a draw function, that gets called in the Application class.  
-The Application’s Update keeps looping all the components’ updates and then proceeds to render the objects. The map takes care of the spawner, the score texts, the background, and the collisions with both Bobbles and walls. The Player handles the Bobble’s vector direction (and its normalization), as well as its destruction and respawn.   
-The Win/Lose condition is given by the number of lives that the player has. If that number reaches 0, the game is considered over and exits the loop freeing the occupied memory.  
+The only instance present in the main is the Application. The whole game logic gets handled internally.     
+All the objects present in the implementation have an Update and a draw function, that gets called in the Game class.  
+The Game’s Update keeps looping all the components’ updates and then proceeds to render the objects. The map (.txt) takes care of the spawn point,and provides a grid to handle the collisions with the entities. The Player handles the Bobble’s vector direction (and its normalization), as well as its destruction and respawn.   
+The Win/Lose condition is given by the number of lives that the player and the key pick up. If that number reaches 0, the game is considered over and exits the loop freeing the allocated memory, or if the key at the end of the map is picked up the player wins. 
+
+<img src="FinalUML.png" alt="UML" width="200"/>
 
 ## Technologies:
 - C/C++
 - SDL2
 - SDL2_image-2.0.1 
-- SDL2_ttf-2.0.15
-
+- SDL2_ttf-2.0.15 
