@@ -10,6 +10,7 @@ SuperMario-like game created with 'SDL'.
 * [Technologies](#technologies)
 
 
+<a name="download-&-setup"></a>
 ## Download & Setup  
 **`DOWNLOAD THE PROJECT AND START THE SOLUTION ON x64 PLATFORM. IT WON'T RUN ON x32 UNLESS YOU SWAP THE DLLs IN THE PROJECT FOLDER`**
 
